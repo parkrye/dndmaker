@@ -11,73 +11,28 @@
     <p>연령 : <input type="text" name="age"></p>
     
     <p>성향</p>
-    <input type="radio" name="alig1" value="law" checked>질서
+    <input type="radio" name="alig1" value="law">질서
     <input type="radio" name="alig1" value="neutral">중립
     <input type="radio" name="alig1" value="chaos">혼돈<p/>
-    <input type="radio" name="alig2" value="good" checked>선
+    <input type="radio" name="alig2" value="good">선
     <input type="radio" name="alig2" value="neutral">중용
     <input type="radio" name="alig2" value="evil">악<p/>
     
     <p>종족</p>
     <select name="race1" size="8">
-      <option value="1" selected>드워프</option>
-      <option value="2">엘프</option>
-      <option value="3">인간</option>
-      <option value="4">하플링</option>
-      <option value="5">노움</option>
-      <option value="6">드래곤본</option>
-      <option value="7">티플링</option>
-      <option value="8">하프</option>
+      <optgroup label="종족 목록">
+        <option value="1">드워프</option>
+        <option value="2">엘프</option>
+        <option value="3">인간</option>
+        <option value="4">하플링</option>
+        <option value="5">노움</option>
+        <option value="6">드래곤본</option>
+        <option value="7">티플링</option>
+        <option value="8">하프</option>
+      </optgroup>
     </select><p/>
     
-    switch(race1.value){
-      case 1:
-        <p>세부 종족</p>
-        <input type="radio" name="race2" value="dwarf1" checked>언덕 드워프
-        <input type="radio" name="race2" value="dwarf2">산 드워프<p/>;
-        break;
-      case 2:
-        <p>세부 종족</p>
-        <input type="radio" name="race2" value="elf1" checked>하이 엘프
-        <input type="radio" name="race2" value="elf2">우드 엘프
-        <input type="radio" name="race2" value="elf3">다크 엘프<p/>;
-        break;
-      case 3:
-        <p>세부 종족</p>
-        <input type="radio" name="race2" value="human1">구 인간
-        <input type="radio" name="race2" value="human2">신 인간<p/>;
-        break;
-      case 4:
-        <p>세부 종족</p>
-        <input type="radio" name="race2" value="halfling1">라이트풋 하플링
-        <input type="radio" name="race2" value="halfling2">스타우트 하플링<p/>;
-        break;
-      case 5:
-        <p>세부 종족</p>
-        <input type="radio" name="race2" value="gnome1">바위 노움
-        <input type="radio" name="race2" value="gnome2">숲 노움<p/>;
-        break;
-      case 6:
-        <p>세부 종족</p>
-        <select name="race2" size="10">
-         <option value="dragon1" selected>골드</option>
-         <option value="dragon2">그린</option>
-         <option value="dragon3">레드</option>
-         <option value="dragon4">브라스</option>
-         <option value="dragon5">브론즈</option>
-         <option value="dragon6">블랙</option>
-         <option value="dragon7">블루</option>
-         <option value="dragon8">실버</option>
-         <option value="dragon8">카퍼</option>
-         <option value="dragon8">화이트</option>;
-        </select><p/>
-        break;
-      case 8:
-        <p>세부 종족</p>
-        <input type="radio" name="race2" value="half1">하프 엘프
-        <input type="radio" name="race2" value="half2">하프 오크<p/>;
-        break;
-    }
+    
   </form>
 </body>
 </html>
