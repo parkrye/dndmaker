@@ -6,32 +6,47 @@
 <body>
   <h2>캐릭터 작성 양식</h2>
   <form action="dndmaker/code/charcter.html" method="get">
-    <p>이름 : <input type="text" name="name"></p>
-    <p>성별 : <input type="text" name="sex"></p>
-    <p>연령 : <input type="text" name="age"></p>
+    이름 : <input type="text" name="name"><br>
+    성별 : <input type="text" name="sex"><br>
+    연령 : <input type="text" name="age"><br><br>
     
-    <p>성향</p>
+    성향<br>
     <input type="radio" name="alig1" value="law">질서
     <input type="radio" name="alig1" value="neutral">중립
-    <input type="radio" name="alig1" value="chaos">혼돈<p/>
+    <input type="radio" name="alig1" value="chaos">혼돈<br>
     <input type="radio" name="alig2" value="good">선
     <input type="radio" name="alig2" value="neutral">중용
-    <input type="radio" name="alig2" value="evil">악<p/>
+    <input type="radio" name="alig2" value="evil">악<br><br>
     
-    <p>종족</p>
-    <select name="race1" size="8">
-      <optgroup label="종족 목록">
-        <option value="1">드워프</option>
-        <option value="2">엘프</option>
-        <option value="3">인간</option>
-        <option value="4">하플링</option>
-        <option value="5">노움</option>
-        <option value="6">드래곤본</option>
-        <option value="7">티플링</option>
-        <option value="8">하프</option>
-      </optgroup>
-    </select><p/>
+    종족<br>
+    <select name="race1" size="1">
+      <option value="1">드워프</option>
+      <option value="2">엘프</option>
+      <option value="3">인간</option>
+      <option value="4">하플링</option>
+      <option value="5">노움</option>
+      <option value="6">드래곤본</option>
+      <option value="7">티플링</option>
+      <option value="8">하프 엘프</option>
+      <option value="9">하프 오크</option>
+    </select><br>
     
+    배경<br>
+    <select name="background" size="1">
+      <option value="1">군인</option>
+      <option value="2">귀족</option>
+      <option value="3">길드 직공</option>
+      <option value="4">범죄자</option>
+      <option value="5">복사</option>
+      <option value="6">부랑아</option>
+      <option value="7">사기꾼</option>
+      <option value="8">선원</option>
+      <option value="9">시골 영웅</option>
+      <option value="10">예능인</option>
+      <option value="11">은둔자</option>
+      <option value="12">이방인</option>
+      <option value="13">학자</option>
+    </select><br><br>
     
   </form>
 </body>
